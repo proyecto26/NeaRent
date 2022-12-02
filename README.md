@@ -1,7 +1,36 @@
-near-blank-project
-==================
+# NeaRent
+Smart Rent powered by NEAR Protocol
 
-This app was initialized with [create-near-app]
+## Smart Contract
+
+### Objetos/Structs
+
+#### Real estate
+Metadatos de una propiedad:
+- Valor por día 
+- Dirección 
+
+### Storage
+- LookupMap de Propiedad x Arrendatarios - ID de la propiedad y el valor es la wallet del arrendatario.
+
+### Metodos
+- Crear una nueva propiedad - Owner
+- Agregar propietarios (porcentaje de participación) - Owner
+- Asignar arrendatario - Owner
+  - Validar que no tenga arrendatario asignado (No esté en el LookupMap de arrendatarios)
+  - Agregar un arrendatario al LookupMap de arrendatarios
+- Desasignar arrendatario - Owner 
+
+### TODO Terminal
+Acciones desde la Terminal:
+- Crear cuentas de propietarios
+- Crear cuentas de arrendatarios
+
+### TODO UI
+Acciones desde la Terminal:
+- Listar propiedades
+- Filtrar propiedades con rangos de fecha
+- Seleccionar propiedad para ver el detalle
 
 
 Quick Start
